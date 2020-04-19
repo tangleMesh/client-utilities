@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+    <script src="../http-client.js"></script>
+    <script>
+
+        var httpClient = new HttpClient ("https://user-service-dev.omoku.io");
+
+        
+        httpClient.get (function (error, result) {
+            console.log ("GET", error, result);
+        }, "/authentification/security/two-factor/mails/" + encodeURIComponent ("some@mail.de"));
+        
+        httpClient.post (function (error, result) {
+            console.log ("GET", error, result);
+        }, "/authentification/login", {
+            mail: "some@mail.de",
+            password: "some-password"
+        }, {}, {
+            "X-CAPTCHA": "1",
+        });
+        
+        httpClient.get (function (error, result) {
+            console.log ("GET", error, result);
+        }, "/details/account/referral-code");
+
+    </script>
+</body>
+</html>

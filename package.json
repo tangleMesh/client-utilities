@@ -1,0 +1,23 @@
+{
+  "name": "@tanglemesh/client-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangleMesh/client-utilities.git"
+  },
+  "keywords": [
+    "client",
+    "utilities"
+  ],
+  "author": "Jeremias Ehnle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tangleMesh/client-utilities/issues"
+  },
+  "homepage": "https://github.com/tangleMesh/client-utilities#readme"
+}
